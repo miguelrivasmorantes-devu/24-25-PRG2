@@ -10,3 +10,4 @@ Los retos se irán proponiendo, habitualmente luego de una disertación teórica
 |Retos|Entrega|Rama
 |-|-|-|
 |[Escalas y acordes](/evaluaciones/retos/reto001.md)|Viernes 7 - 00:00h|reto-001
+ 
