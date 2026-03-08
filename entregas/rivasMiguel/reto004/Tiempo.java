@@ -20,7 +20,7 @@ public class Tiempo {
         this.segundos = segundos;
     }
 
-    public boolean equals(Tiempo tiempo) {
+    public boolean esIgualA(Tiempo tiempo) {
         return this.horas == tiempo.horas && this.minutos == tiempo.minutos && this.segundos == tiempo.segundos;
     }
 
@@ -38,13 +38,13 @@ public class Tiempo {
     }
 
     public boolean despuesDe(Tiempo tiempo) {
-        return !antesQue(tiempo) && !equals(tiempo);
+        return !antesQue(tiempo) && !esIgualA(tiempo);
     }
 
     public int compararTiempo(Tiempo tiempo) {
         if (antesQue(tiempo)) {
             return -1;
-        } else if (equals(tiempo)) {
+        } else if (esIgualA(tiempo)) {
             return 0;
         } else {
             return 1;
