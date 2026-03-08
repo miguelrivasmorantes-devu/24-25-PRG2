@@ -17,7 +17,7 @@ public class Fecha {
         this.dia = dia;
     }
 
-    public boolean equals(Fecha fecha) {
+    public boolean esIgualA(Fecha fecha) {
         return this.año == fecha.año && this.mes == fecha.mes && this.dia == fecha.dia;
     }
 
@@ -35,13 +35,13 @@ public class Fecha {
     }
 
     public boolean despuesDe(Fecha fecha) {
-        return !antesQue(fecha) && !equals(fecha);
+        return !antesQue(fecha) && !esIgualA(fecha);
     }
 
     public int compararTiempo(Fecha fecha) {
         if (antesQue(fecha)) {
             return -1;
-        } else if (equals(fecha)) {
+        } else if (esIgualA(fecha)) {
             return 0;
         } else {
             return 1;
